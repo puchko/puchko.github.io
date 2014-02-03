@@ -1,4 +1,4 @@
-puchko.github.io
-================
+puchko.com
+==========
 
 Personal site.
