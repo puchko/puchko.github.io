@@ -33,11 +33,46 @@
     }
     p {
       font-weight: 700;
-      font-size: 14pt;
+      font-size: 16pt;
     }
     a:link,
     a:visited {
       color: #333;
+    }
+    a {
+      text-decoration: none;
+      position: relative;
+    }
+    a:before {
+        content: '';
+        display: block;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        height: 2px;
+        width: 0;
+        transition: width 0s ease, background .7s ease;
+    }
+    a:after {
+        content: '';
+        display: block;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        height: 2px;
+        width: 0;
+        background: #444;
+        transition: width .7s ease;
+    }
+    a:hover:before {
+        width: 100%;
+        background: #444;
+        transition: width .7s ease;
+    }
+    a:hover:after {
+        width: 100%;
+        background: transparent;
+        transition: all 0s ease;
     }
     </style>
   </head>
